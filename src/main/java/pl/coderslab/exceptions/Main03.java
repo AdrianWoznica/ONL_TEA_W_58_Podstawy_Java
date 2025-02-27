@@ -7,7 +7,9 @@ public class Main03 {
     }
 
     static void showLength(String s) {
-        System.out.println(s.length());
+        if (s == null){
+            System.out.println("The provided string is null, cannot calculate length.");
+        } else System.out.println(s.length());
     }
 
 }
